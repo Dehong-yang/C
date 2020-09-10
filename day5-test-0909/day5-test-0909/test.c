@@ -103,14 +103,25 @@
 //	return 0;
 //}
 
+//int* test()
+//{
+//	//static int a = 10;  //¾²Ì¬Çø
+//	int a = 10; //Õ»Çø
+//	return &a;
+//}
+//int main()
+//{
+//	int*p = test();
+//	*p = 20;
+//	return 0;
+//}
 int* test()
 {
-	static int a = 10;
-	return &a;
+	int *p = malloc(100); //¶ÑÇø
+	return ptr;
 }
 int main()
 {
 	int*p = test();
-	*p = 20;
 	return 0;
 }
